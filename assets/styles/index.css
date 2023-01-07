@@ -1,0 +1,311 @@
+*{
+    --black-color: #111111;
+    --white-color: #ffffff;
+    --azure-1: rgb(164, 221, 221);
+    --brown-1: #706548;
+    --grey-1: #e5e5e5d7;
+    --grey-2: #f0efeff0;
+    --grey-3: #444343;
+    --grey-4: rgba(31, 31, 31, 0.772);
+    --green-1: rgb(64, 160, 64);
+    --green-2: rgb(106, 208, 106);
+    --green-3: green;
+    --linkedin-color: #007bb5;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 14px;
+    margin:0;
+    padding:0;
+}
+
+main {
+    min-height: 50vh;
+}
+
+section {
+    display: flex;
+}
+
+nav { 
+    height: 75px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 75px;
+    background-color: var(--brown-1);
+    border-bottom: solid 1px var(--azure-1);
+}
+
+footer {
+    background-color: var(--brown-1);
+    border-top: solid 1px var(--azure-1);
+    color: var(--grey-2);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer p:first-child {
+    max-width: 420px;
+    font-size: 16px;
+    margin: 0 auto;
+}
+
+footer p:nth-child(2) {
+    color: var(--azure-1);
+}
+
+/* ---- NAV ---------------------------------------------------- */
+
+#TopBar-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1140px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.TopBar-menu {
+    color: var(--azure-1);
+    font-size: 1.4rem;
+    font-family: 'Syne Mono', monospace;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+#TopBar-right a:hover {
+    background-color: var(--green-1);
+    color: var(--black-color);
+    border-radius: 10%;
+}
+
+#SearchText {
+    color: black;
+    height: 30px;
+}
+
+#TopBar-logo img { 
+    vertical-align: middle;
+    height: 60px;
+    width: 70px;
+    margin-top: 5px;
+}
+
+/* ---- FOOTER ---------------------------------------------------- */
+
+#social-media {
+    font-size: 30px;
+    margin: 10px;
+}
+
+.fa-linkedin {
+background: var(--linkedin-color);
+color: var(--white-color)
+}
+
+/* ---- HERO ---------------------------------------------------- */
+
+#Hero {
+    z-index: 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid var(--black-color);
+    background-image: url(../img/background-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+    width: 100%;
+    height: 637px;
+}
+
+#Discovery-block {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 25px;
+    height: 90%;
+    width: 30%;
+    margin: 30px 45px 0px 0px;
+    border: 3px solid black;
+    background-color: var(--grey-1);
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+    flex-wrap: wrap;
+}
+
+#Discovery-block h2,
+#Discovery-block p {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+#Discovery-block h2 {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 30px 30px 5px 30px;
+    font-family: 'Syne Mono', monospace;
+}
+
+#Discovery-block p {
+    text-align: justify;
+    font-size: 1.4rem;
+    font-weight: 500;
+    font-family: 'Lobster', cursive;
+    margin: 120px 45px 10px 45px;
+    bottom: 90px;
+    color: var(--black-color);
+}
+
+#Discovery-button,
+#Earth-button,
+#Marine-button,
+#Fly-button {
+    text-decoration: none;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    text-align: justify;
+    color: var(--brown-1);
+    bottom: 55px;
+    font-size: 1.75rem;
+    font-weight: 600;
+    font-family: 'Syne Mono', monospace;
+    border: 2px solid black;
+    padding: 10px 40px 5px 40px;
+    background-color: var(--white-color);
+}
+
+#Discovery-button:hover {
+    background-color: var(--green-1);
+    color: var(--black-color);
+}
+
+/* ---- SUB-HERO ---------------------------------------------------- */
+
+#Sub-hero {
+    border: 2px dashed var(--black-color); 
+}
+
+#Top-sub-hero,
+#Bottom-sub-hero {
+    background-color: var(--brown-1);
+    height: 150px;
+}
+
+@keyframes Moving {
+    0% {
+        top: 12%;
+        left: 46%;
+        box-shadow: 0px 0px 20px var(--azure-1);
+    }
+    33% {
+        top: 12%;
+        left: 6%;
+        box-shadow: 0px 0px 20px gold;
+    }
+    50% {
+        box-shadow: 0px 0px 20px var(--azure-1);
+    }
+    66% {
+        top: 12%;
+        left: 86%;
+        box-shadow: 0px 0px 20px gold;
+    }
+    100% {
+        top: 12%;
+        left: 46%;
+        box-shadow: 0px 0px 20px var(--azure-1);
+        rotate: 2880deg;
+    }
+}
+
+.Rectangle {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    top: 12%;
+    left: 46%;
+    border-radius: 100%;
+    background-image: url(../img/os-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 20px 0 var(--black-color);
+}
+
+#Top-sub-hero div,
+#Bottom-sub-hero div {
+    animation-name: Moving;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 5s;
+    animation-delay: 2s;
+}
+
+#Middle-sub-hero {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 637px;
+    background-color: var(--grey-3);
+}
+
+.Categories-blocks {
+    position: relative;
+    height : 60%;
+    width: 25%;
+    margin-top: 10%;
+    box-shadow: 5px 5px 20px 0 rgba(0,0,0,0.2);
+}
+
+.Categories-blocks img {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Categories-blocks .Legend {
+    transform: scale(0);
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    position: absolute;
+    font-size: 2rem;
+    color: var(--white-color);
+    background-color: var(--grey-4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0px 40px 0px 40px;
+    transition: 1s;
+}
+
+.Categories-blocks:hover .Legend {
+    transform: scale(1);
+}
+
+#Earth-button,
+#Marine-button,
+#Fly-button {
+    position: relative;
+    bottom: 115%;
+}
+
+#Earth-button:hover,
+#Marine-button:hover,
+#Fly-button:hover {
+    background-color: var(--green-1);
+    color: var(--black-color);
+} 
