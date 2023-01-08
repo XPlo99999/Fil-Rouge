@@ -1,20 +1,78 @@
-/*@import url("../assets/styles/index.css");*/
-/*
-* {
-    --black-color: #111111;
-    --white-color: #ffffff;
-    --azure-1: rgb(164, 221, 221);
-    --azure-2: rgb(43, 183, 183);
-    --brown-1: #706548;
-    --grey-1: #e5e5e5d7;
-    --grey-2: #f0efeff0;
-    --grey-3: #444343;
-    --grey-4: rgba(31, 31, 31, 0.772);
-    --grey-5: #dcd8d8;
-    --green-1: rgb(64, 160, 64);
-    --green-2: rgb(106, 208, 106);
-    --green-3: green;
-    --linkedin-color: #007bb5;
-    box-sizing: border-box;
+@import url("../assets/styles/index.css");
+
+
+/* ---- CONTENT ------------------------------------------- */
+
+main {
+    background-color: var(--grey-5);
 }
-*/
+
+#Content {
+    position: relative;
+    width: 60%;
+    background-color: var(--white-color);
+    left: 20%;
+}
+
+.Main-title {
+    font-family: 'Syne Mono', monospace;
+    text-align: center;
+    font-size: 24px;
+}
+
+#Content h3 {
+    font-family: 'Syne Mono', monospace;
+    margin-left: 35px;
+    font-size: 19px;
+}
+
+#Content p {
+    font-family: 'Lobster', cursive;
+    margin: 0px 25px 0px 25px;
+    font-size: 15px;
+    text-align: justify;
+    margin-bottom: 20px;
+    border: 1px solid;
+    padding: 10px;
+}
+
+#Content p:nth-child(odd) {
+    height: 170px;
+    overflow: scroll;
+}
+
+#Content p:hover {
+    color: var(--white-color);
+    background-color: var(--brown-1);
+}
+
+#Content p:last-child {
+    height: 180px;
+    overflow: scroll;
+}
+
+#Content p::first-letter {
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#Content hr:nth-child(odd),
+#Content hr:nth-child(even) {
+    color: var(--azure-2);
+    float: right;
+    width: 60%;
+}
+  
+/* ---- TIMELINE ------------------------------------------- */
+
+#Sticky-timeline {
+    position: sticky;
+    bottom: 0px;
+    left: 0px;
+    padding: 0px 7px 7px 7px;
+}
+
+#Sticky-timeline img{
+    height: 250px;
+    width: 100%;
+}
