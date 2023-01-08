@@ -1,12 +1,14 @@
-*{
+* {
     --black-color: #111111;
     --white-color: #ffffff;
     --azure-1: rgb(164, 221, 221);
+    --azure-2: rgb(43, 183, 183);
     --brown-1: #706548;
     --grey-1: #e5e5e5d7;
     --grey-2: #f0efeff0;
     --grey-3: #444343;
     --grey-4: rgba(31, 31, 31, 0.772);
+    --grey-5: #dcd8d8;
     --green-1: rgb(64, 160, 64);
     --green-2: rgb(106, 208, 106);
     --green-3: green;
@@ -20,17 +22,15 @@ html {
 
 body {
     font-size: 14px;
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
 main {
     min-height: 50vh;
 }
 
-section {
-    display: flex;
-}
+/* ---- NAV ---------------------------------------------------- */
 
 nav { 
     height: 75px;
@@ -40,30 +40,6 @@ nav {
     background-color: var(--brown-1);
     border-bottom: solid 1px var(--azure-1);
 }
-
-footer {
-    background-color: var(--brown-1);
-    border-top: solid 1px var(--azure-1);
-    color: var(--grey-2);
-    text-align: center;
-    padding: 30px 0;
-}
-
-footer p {
-    font-size: 15px;
-}
-
-footer p:first-child {
-    max-width: 420px;
-    font-size: 16px;
-    margin: 0 auto;
-}
-
-footer p:nth-child(2) {
-    color: var(--azure-1);
-}
-
-/* ---- NAV ---------------------------------------------------- */
 
 #TopBar-container {
     display: flex;
@@ -100,6 +76,34 @@ footer p:nth-child(2) {
 }
 
 /* ---- FOOTER ---------------------------------------------------- */
+
+footer {
+    background-color: var(--brown-1);
+    border-top: solid 1px var(--azure-1);
+    color: var(--grey-2);
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+footer p:first-child {
+    max-width: 420px;
+    font-size: 16px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+footer p:nth-child(3) {
+    font-weight: 700;
+}
+
+footer hr {
+    width: 30%;
+    color: var(--azure-1);
+}
 
 #social-media {
     font-size: 30px;
@@ -192,13 +196,9 @@ color: var(--white-color)
 
 /* ---- SUB-HERO ---------------------------------------------------- */
 
-#Sub-hero {
-    border: 2px dashed var(--black-color); 
-}
-
 #Top-sub-hero,
 #Bottom-sub-hero {
-    background-color: var(--brown-1);
+    background-color: var(--grey-5);
     height: 150px;
 }
 
@@ -206,30 +206,35 @@ color: var(--white-color)
     0% {
         top: 12%;
         left: 46%;
-        box-shadow: 0px 0px 20px var(--azure-1);
+        box-shadow: 0px 0px 20px var(--azure-2);
+        background-color: var(--white-color);
     }
     33% {
         top: 12%;
         left: 6%;
         box-shadow: 0px 0px 20px gold;
+        background-color: var(--brown-1);
     }
     50% {
-        box-shadow: 0px 0px 20px var(--azure-1);
+        box-shadow: 0px 0px 20px var(--azure-2);
+        background-color: var(--white-color);
     }
     66% {
         top: 12%;
         left: 86%;
         box-shadow: 0px 0px 20px gold;
+        background-color: var(--brown-1);
     }
     100% {
         top: 12%;
         left: 46%;
-        box-shadow: 0px 0px 20px var(--azure-1);
+        box-shadow: 0px 0px 20px var(--azure-2);
+        background-color: var(--white-color);
         rotate: 2880deg;
     }
 }
 
-.Rectangle {
+.Bones {
     position: relative;
     width: 120px;
     height: 120px;
@@ -239,7 +244,7 @@ color: var(--white-color)
     background-image: url(../img/os-1.png);
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 20px 0 var(--black-color);
+    box-shadow: 0px 0px 20px 0 var(--azure-2);
 }
 
 #Top-sub-hero div,
