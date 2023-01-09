@@ -1,20 +1,277 @@
-/*@import url("../assets/styles/index.css");*/
-/*
-* {
-    --black-color: #111111;
-    --white-color: #ffffff;
-    --azure-1: rgb(164, 221, 221);
-    --azure-2: rgb(43, 183, 183);
-    --brown-1: #706548;
-    --grey-1: #e5e5e5d7;
-    --grey-2: #f0efeff0;
-    --grey-3: #444343;
-    --grey-4: rgba(31, 31, 31, 0.772);
-    --grey-5: #dcd8d8;
-    --green-1: rgb(64, 160, 64);
-    --green-2: rgb(106, 208, 106);
-    --green-3: green;
-    --linkedin-color: #007bb5;
-    box-sizing: border-box;
+@import url("../assets/styles/index.css");
+
+main {
+    background-color: var(--grey-5);
 }
-*/
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+section,
+section h2 {
+    background-color: var(--black-color);
+}
+
+section h2,
+article h3 {
+    font-family: 'Syne Mono', monospace;
+}
+
+section h2 {
+    cursor: pointer;
+    color: var(--white-color);
+    font-size: 24px;
+    height: 50px;
+    text-align: center;
+    transition: 0.5s;
+    transition: color 1s, height 1s, font-size 3s 1s linear, background-color 4s;
+} 
+
+section h2:hover {
+    height: 90px;
+    font-size: 70px;
+    color : gold;
+}
+
+article {
+    text-align: center;
+    margin: 30px 0 0 0;
+}
+
+article h3 {
+    font-size: 21px;
+    font-weight: bolder;
+    font-style: italic;
+    color: var(--brown-1);
+}
+
+article h3:hover {
+    color: orange;
+}
+
+article hr {
+    position: relative;
+    left: 35%;
+    width: 30%;
+    margin: 0 0 40px 0;
+    color: var(--azure-1); 
+}
+
+#Bottom-article hr {
+    width: 20%;
+    left: 40%;
+}
+
+#Bottom-article {
+    margin-top: 80px;
+}
+
+#Flex-container {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+
+.Caroussel {
+    width: 380px;
+    overflow: hidden;
+    border: 3px solid var(--black-color);
+}
+
+.Photos {
+    display: flex;
+    animation-duration: 10s;
+    animation-name: Slides;
+    animation-iteration-count: infinite;
+}
+
+@keyframes Slides {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-380px);
+    }
+    50% {
+        transform: translateX(-760px);
+    }
+    75% {
+        transform: translateX(-1140px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.Photos img {
+    width: 380px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Flex-container-2 {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    height: 500px;
+    width: 100%;
+    background-color: var(--black-color);
+    border: 3px dashed black;
+}
+
+#Flex-container-2 div {
+    width: 14%;
+    height: 50%;
+    border-radius: 100%;
+}
+
+#Flex-container-2 div:nth-child(1):hover,
+#Flex-container-2 div:nth-child(2):hover,
+#Flex-container-2 div:nth-child(3):hover,
+#Flex-container-2 div:nth-child(4):hover,
+#Flex-container-2 div:nth-child(5):hover {
+    cursor: pointer;
+    animation-duration: 5s;
+}
+
+#Flex-container-2 div:nth-child(1):hover {
+    transform: scale(1.25);
+    background-color: var(--white-color);
+}
+
+#Flex-container-2 div:nth-child(2):hover {
+    animation-iteration-count: infinite;
+    animation-name: Imprévisible;
+}
+
+@keyframes Imprévisible {
+    0%{
+        transform: rotateY(720deg);
+    }
+    20%{
+        background-color: blueviolet;
+    }
+    30%{
+        background-color: red;
+    }
+    40%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: black;
+        transform: rotateY(1440deg);
+    }
+    60%{
+        background-color: yellow;
+    }
+    70%{
+        background-color: red;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+    100%{
+        transform: rotateY(720deg);
+    }
+}
+
+#Flex-container-2 div:nth-child(3):hover {
+    animation-iteration-count: infinite;
+    animation-name: TournerDansLeVide;
+}
+
+@keyframes TournerDansLeVide {
+    0%{
+        transform: rotate(360deg);
+    }
+    20%{
+        background-color: blueviolet;
+    }
+    30%{
+        background-color: red;
+    }
+    40%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: black;
+    }
+    60%{
+        background-color: yellow;
+    }
+    70%{
+        background-color: red;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+    100%{
+        transform: rotate(5400deg);
+    }
+}
+
+#Flex-container-2 div:nth-child(4):hover {
+    animation-iteration-count: infinite;
+    animation-name: Dimensions;
+}
+
+@keyframes Dimensions {
+    0%{
+        transform: rotateX(720deg);
+    }
+    20%{
+        background-color: blueviolet;
+    }
+    30%{
+        background-color: red;
+    }
+    40%{
+        background-color: yellow;
+    }
+    50%{
+        background-color: black;
+        transform: rotateX(1440deg);
+    }
+    60%{
+        background-color: yellow;
+    }
+    70%{
+        background-color: red;
+    }
+    80%{
+        background-color: blueviolet;
+    }
+    100%{
+        transform: rotateX(720deg);
+    }
+}
+
+#Flex-container-2 div:nth-child(5):hover {
+    transform: scale(0.75);
+    background-color: var(--white-color);
+}
+
+#Flex-container-2 img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#Flex-container-2 div:nth-child(odd) {
+    box-shadow: 0px 0px 20px 0 gold;
+    margin-top: 30px;
+}
+
+#Flex-container-2 div:nth-child(3) {
+    box-shadow: 0px 0px 20px 0 var(--green-2);
+}
+
+#Flex-container-2 div:nth-child(even) {
+    margin-top: 220px;
+    box-shadow: 0px 0px 20px 0 var(--azure-2);
+}

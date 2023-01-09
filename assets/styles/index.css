@@ -294,7 +294,12 @@ color: var(--white-color)
 .Categories-blocks img {
     background-repeat: no-repeat;
     background-size: cover;
+    transition: 2s;
 }
+/*
+.Categories-blocks img:hover {
+    transform: scale(1.1);
+}*/
 
 .Categories-blocks .Legend {
     transform: scale(0);
