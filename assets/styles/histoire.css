@@ -114,3 +114,17 @@ main {
     width: 100%;
     border: 4px solid var(--brown-1);
 }
+
+/* ---- RESPONSIVE ------------------------------------------- */
+
+@media screen and (max-width: 999px){
+    #sticky-timeline img{
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 699px){
+    #sticky-timeline img{
+        height: 30%;
+    }
+}
