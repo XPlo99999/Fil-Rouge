@@ -63,7 +63,7 @@ main {
 }
 
 #First-p:hover {
-    color: gold;
+    color: var(--gold-1);
     background-color: var(--grey-6);
 }
 
@@ -83,7 +83,7 @@ main {
 }
 
 #Third-p:hover {
-    color: gold;
+    color: var(--gold-1);
     background-color: var(--grey-6);
 }
 

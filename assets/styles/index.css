@@ -1,9 +1,10 @@
-* {
+:root {
     --black-color: #111111;
     --white-color: #ffffff;
     --azure-1: rgb(164, 221, 221);
     --azure-2: rgb(43, 183, 183);
     --brown-1: #706548;
+    --gold-1: gold;
     --grey-1: #e5e5e5d7;
     --grey-2: #f0efeff0;
     --grey-3: #444343;
@@ -224,7 +225,7 @@ color: var(--white-color)
     33% {
         top: 12%;
         left: 6%;
-        box-shadow: 0px 0px 20px gold;
+        box-shadow: 0px 0px 20px var(--gold-1);
         background-color: var(--brown-1);
     }
     50% {
@@ -234,7 +235,7 @@ color: var(--white-color)
     66% {
         top: 12%;
         left: 86%;
-        box-shadow: 0px 0px 20px gold;
+        box-shadow: 0px 0px 20px var(--gold-1);
         background-color: var(--brown-1);
     }
     100% {
@@ -296,10 +297,6 @@ color: var(--white-color)
     background-size: cover;
     transition: 2s;
 }
-/*
-.Categories-blocks img:hover {
-    transform: scale(1.1);
-}*/
 
 .Categories-blocks .Legend {
     transform: scale(0);
