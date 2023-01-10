@@ -2,6 +2,9 @@
 
 main {
     background-color: var(--grey-5);
+    background-image: url(../img/cinema.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 section {
@@ -32,7 +35,6 @@ section h2 {
 section h2:hover {
     height: 90px;
     font-size: 70px;
-    color : var(--gold-1);
 }
 
 article {
@@ -46,7 +48,7 @@ article h3 {
     font-style: italic;
     color: var(--brown-1);
 }
-
+section h2:hover,
 article h3:hover {
     color: orange;
 }
@@ -71,7 +73,8 @@ article hr {
 #Flex-container {
     display: flex;
     justify-content: center;
-    justify-content: space-around;
+    /*justify-content: space-around;*/
+    justify-content: space-evenly;
 }
 
 
