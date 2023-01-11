@@ -10,6 +10,10 @@ main {
     background-color: var(--grey-5);
 }
 
+aside {
+    width: 8%;
+}
+
 p {
     font-size: 18px;
     text-align: center;
@@ -24,8 +28,10 @@ p {
 #Grid-container {
     margin: 60px 0 60px 0;
     grid-gap: 20px;
-    grid-template-columns: repeat(6, 220px);
-    grid-template-rows: repeat(5, 220px);
+    /*grid-template-columns: repeat(6, 220px);*/
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /*grid-template-rows: repeat(5, 220px);*/
+    grid-auto-rows: 220px;
 }
 
 #Grid-container > div { 

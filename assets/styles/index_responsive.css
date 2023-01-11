@@ -48,6 +48,9 @@
     .Bones {
         display: none;
     }
+    #SearchText {
+        width: 100px;
+    }
 }
 
 @media screen and (max-width: 919px) {
@@ -86,18 +89,15 @@
     }
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 629px) {
+    .TopBar-menu {
+        font-size: 17px;
+    }
     #Discovery-block h2 {
-        font-size : 15px;
+        font-size : 17px;
     }
     #Discovery-block p {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: 609px) {
-    .TopBar-menu {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -117,7 +117,7 @@
     
 }
 
-@media screen and (max-width: 453px) {
+@media screen and (max-width: 512px) {
     nav {
         height: 110px;
     }
@@ -125,6 +125,9 @@
         position: relative;
         bottom: 30px;
     }
+}
+
+@media screen and (max-width: 454px) {
     #Middle-sub-hero {
         height: 1200px;
     }
@@ -151,23 +154,15 @@
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 392px){
     #TopBar-right a:nth-child(3) {
-        visibility: hidden;
         position: relative;
         bottom: 30px;
     }
 }
 
-@media screen and (max-width: 359px) {
-    #TopBar-right a:nth-child(3) {
-        visibility:inherit;
-    }
-
 @media screen and (max-width: 319px) {
     * {
         display: none;
     }
-}
-
 }

@@ -1,3 +1,27 @@
 @import url("../assets/styles/index.css");
 @import url("../assets/styles/index_responsive.css");
 @import url("../assets/styles/dinosaures.css");
+
+@media screen and (max-width: 899px) {
+    aside {
+        width: 12%;
+    }
+}
+
+@media screen and (max-width: 699px) {
+    aside {
+        width: 16%;
+    }
+}
+
+@media screen and (max-width: 499px) {
+    aside {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    aside {
+        width: 50%;
+    }
+}
