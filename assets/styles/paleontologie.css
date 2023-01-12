@@ -73,10 +73,8 @@ article hr {
 #Flex-container {
     display: flex;
     justify-content: center;
-    /*justify-content: space-around;*/
     justify-content: space-evenly;
 }
-
 
 .Caroussel {
     width: 380px;

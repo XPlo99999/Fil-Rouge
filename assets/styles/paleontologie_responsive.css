@@ -1,3 +1,94 @@
 @import url("../assets/styles/index.css");
 @import url("../assets/styles/index_responsive.css");
 @import url("../assets/styles/paleontologie_responsive.css");
+
+@media screen and (max-width: 1319px) {
+    main {
+        background-color: var(--black-color);
+    }
+}
+
+@media screen and (max-width: 1249px) {
+    main {
+        background-image: url(../img/justnothing.png);
+    }
+    #Flex-container {
+        display: inline-block;
+    }
+    .Caroussel {
+        margin: 30px auto 30px auto;
+    }
+}
+
+@media screen and (max-width: 1099px) {
+    section h2:hover {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 1049px) {
+    #Flex-container-2 {
+        display: inline-block;
+        height: 1650px;
+    }
+    #Flex-container-2 div {
+        height: 250px;
+        width: 250px;
+    }
+    #Flex-container-2 div:nth-child(odd),
+    #Flex-container-2 div:nth-child(even) {
+        margin: 65px auto 65px auto;
+    }
+}
+
+@media screen and (max-width: 449px) {
+    .Caroussel {
+        margin: 30px auto 30px auto;
+        height: 250px;
+        width: 250px;
+    }
+    @keyframes Slides {
+        0% {
+            transform: translateX(0);
+        }
+        25% {
+            transform: translateX(-250px);
+        }
+        50% {
+            transform: translateX(-500px);
+        }
+        75% {
+            transform: translateX(-750px);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    .Photos img {
+        width: 250px;
+        height: 250px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    section h2 {
+        padding: 0 15px 0 15px;
+    }
+    article h3 {
+        padding: 0 15px 0 15px;
+    }
+
+    #Flex-container-2 {
+        height: 1050px;
+    }
+    #Flex-container-2 div {
+        height: 150px;
+        width: 150px;
+    }
+    #Flex-container-2 div:nth-child(odd),
+    #Flex-container-2 div:nth-child(even) {
+        margin: 45px auto 45px auto;
+    }
+}
