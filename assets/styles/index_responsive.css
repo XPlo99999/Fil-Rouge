@@ -1,8 +1,6 @@
 
 @import url("../assets/styles/index.css");
 
-/* ---- RESPONSIVE ------------------------------------------- */
-
 @media screen and (max-width: 1460px) {
     #Discovery-block {
         width: 50%;
@@ -121,8 +119,12 @@
     nav {
         height: 110px;
     }
+}
+
+@media screen and (max-width: 496px) {
     #TopBar-right a:nth-child(4) {
         position: relative;
+        visibility: inherit;
         bottom: 30px;
     }
 }

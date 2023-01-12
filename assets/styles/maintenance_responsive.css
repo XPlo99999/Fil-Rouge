@@ -1,0 +1,22 @@
+@import url("../assets/styles/index.css");
+@import url("../assets/styles/index_responsive.css");
+@import url("../assets/styles/maintenance_responsive.css");
+
+@media screen and (max-width: 1399px){
+    p {
+        padding: 0 15px 0 15px;
+    }
+}
+
+@media screen and (max-width: 599px){
+    ul li {
+        display: flex;
+        left: 0;
+        right: 0;
+        padding: 0 8px 0 8px;
+        margin: 0 auto 0 auto;
+    }
+    ul li a {
+        font-size: 19px;
+    }
+}
