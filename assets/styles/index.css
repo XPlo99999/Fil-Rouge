@@ -71,11 +71,11 @@ nav {
     color: var(--black-color);
     border-radius: 10%;
 }
-
+/*
 #TopBar-right a:visited {
     color: red;
 }
-
+*/
 #SearchText {
     color: black;
     height: 30px;
